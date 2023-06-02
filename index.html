@@ -1,0 +1,909 @@
+﻿<head>
+<meta property="og:url" content="https://oriba-lebanon.github.io/Menu//ViewMenu.htm" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Oriba" />
+<meta property="og:description" content="Oriba Online Menu" />
+<meta property="og:image" content="https://oriba-lebanon.github.io/Menu//logo.gif" />
+</head>
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+
+
+function isTouchDevice() {
+  return (('ontouchstart' in window) ||
+     (navigator.maxTouchPoints > 0) ||
+     (navigator.msMaxTouchPoints > 0));
+}
+
+
+function ScrollRemove() {
+
+document.getElementsByClassName("tablinks")[0].click();
+
+
+/* use    (isTouchDevice())    instead but doesn't always work*/
+if (window.matchMedia("(pointer: coarse)").matches) {
+document.getElementById('ALeft').style.visibility = 'hidden';
+document.getElementById('ARight').style.visibility = 'hidden';
+} else {
+
+var style = document.createElement('style');
+style.innerHTML = `
+
+.arrow-right {
+  float:right;
+  width: 0;
+  height: 0; 
+  border-top: 37px solid transparent;
+  border-bottom: 37px solid transparent;
+  border-left: 70px solid grey; 
+}
+.arrow-left {
+  float:left;
+  border-top: 37px solid transparent;
+  border-bottom: 37px solid transparent; 
+  border-right:70px solid grey; 
+}
+  `;
+document.head.appendChild(style);
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+var newwindow
+
+function tidy()
+{
+if (newwindow && !newwindow.closed) { newwindow.close(); }
+}
+
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+
+  return false;  }
+
+function moveNavigation(byX) {
+  var navigation = document.getElementsByClassName("tab")[0];
+  navigation.scrollLeft = navigation.scrollLeft + byX;
+  }
+
+function popup(mylink, windowname) { if (! window.focus)return true; var href;
+if (typeof(mylink) == 'string') href=mylink; else href=mylink.href;
+window.open(href, windowname, 'width=400,height=800,scrollbars=yes'); return false; }
+
+window.onload = ScrollRemove;
+
+</script>
+
+
+
+
+<Style>
+    .tab-navigation {
+  border: 1px solid solid gray;
+}
+/* Style the tab */
+
+/* To Hide Scrollbar in Desktop PC */
+.tab::-webkit-scrollbar { 
+  display: none; 
+}
+
+
+    .tab .imgcss{  
+        animation:scroll 6s linear 0s infinite;  
+    } 
+    .tab .textcss {
+        animation:textScroll 6s linear 0s infinite;  
+    }
+
+
+.tab {
+    overflow-x: Auto;
+    background-color: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    white-space: nowrap;
+    border:solid 0px solid gray;
+    text-align:center;}
+/* Style the buttons that are used to open the tab content */
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+  background-color: #ddd;
+}
+/* Create an active/current tablink class */
+
+.tab button.active {
+  background-color: #ccc;
+}
+/* Style the tab content */
+
+.tabcontent {
+  display: none;
+  padding: 2px 2px;
+  border: 1px solid solid gray;
+  border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.tab-control {
+background-color: #ddd;
+}
+
+.tab button 
+            img {
+                width:100%;
+                height:100%;
+            },
+
+.tab-control {
+background-color: #f1f1f1;
+/* float: left; */
+display: inline-block;
+border:solid 1px solid gray;
+outline: none;
+cursor: pointer;
+padding: 0px 4px;
+transition: 0.3s;
+font-size: 60px;
+}
+
+.tablinks {border-radius: 0px;}
+/* Radius of Curavture at edge*/
+
+</Style>
+
+
+<script>var Currency1 = "$" </script><link rel="icon" type="image/x-icon" href="favicon.ico" > <form><input type="button" value="Main Page" onclick="location.href= '/'; return false;"  style="float: right;height:66; width:250; background-color: rgb(204,255,204); color: RGB(45,45,103); font-size:32pt; font-weight:bold"></form><font face='Helvetica' style="color: rgb(0,0,58); font-size: 16pt;">Menu By MyShopPOS <br><a href="https://MyShopPOS.wordpress.com"  target="_blank" rel="noopener noreferrer" style="color: inherit;text-decoration:none; cursor: pointer; cursor: hand;">MyShopPOS.wordpress.com</a>
+<body style="background-color: rgb(204,255,204); color: RGB(45,45,103); "><br> <font style="font-size: 14pt;">2023/06/02 13:12:00
+<title>Menu</title>
+<body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table border=0 style='border-width:0; width:100%; cellspacing='0' cellpadding='0'>
+<colgroup><col span='1'><col span='1' style='width: 60%;'><col span='1' style='width: 17%;'></colgroup>
+<tr>
+<td style='border-style: none; border-width: medium'></td>
+<td style='border-style: none; border-width: medium; width:100%'><p align='center'>
+<font face='Helvetica'><center>
+<style>
+@media (orientation: landscape) {img {width: 25%;}};
+@media (orientation: portrait) {img {width: 60%;}};
+</style>
+<img src='Logo.gif'  width="40%" alt='Missing Logo' class='center'>
+</center></font>
+<td style='border-style: none; border-width: medium'></td>
+</tr>
+<tr>
+<th style='border-style: none; border-width: medium'></th>
+<th style='border-style: none; border-width: medium'>
+<br><font face='Helvetica' style='font-size: 48pt'>Menu</font></th>
+<th style='border-style: none; border-width: medium'></th>
+</tr>
+<tr>
+<td style='border-style: none; border-width: medium'></td>
+<td align='center' style='border-style: none; border-width: medium'>
+<font face='Helvetica' style="color: rgb(0,0,58); font-size: 32pt;"><center>03-642690</font></td>
+<td align='right' style='border-style: none; border-width: medium'>
+</tr>
+</table><br>
+
+    <div class="tab-navigation">
+  <button style="height:0px; background-color:transparent; font-size:0pt" id="ALeft" class="tab-control arrow-left" onclick="moveNavigation(-.8*screen.width)"></button>
+
+  <button style="height:0px; background-color:transparent; font-size:0pt" id="ARight"  class="tab-control arrow-right" onclick="moveNavigation(.8*screen.width)"></button>
+
+<div class="tab">
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Wine')"><img src="Menu Photos\Wine.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Beer')"><img src="Menu Photos\Beer.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Alcoholic Drinks')"><img src="Menu Photos\Alcoholic%20Drinks.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Non Alcoholic Drinks')"><img src="Menu Photos\Non%20Alcoholic%20Drinks.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Milk Shakes')"><img src="Menu Photos\Milk%20Shakes.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Smoothies')"><img src="Menu Photos\Smoothies.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Juices')"><img src="Menu Photos\Juices.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Energy Drinks')"><img src="Menu Photos\Energy%20Drinks.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Vodka')"><img src="Menu Photos\Vodka.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Gin')"><img src="Menu Photos\Gin.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Tequila')"><img src="Menu Photos\Tequila.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Ice Cream - 1')"><img src="Menu Photos\Ice%20Cream%20%2D%201.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Ice Cream -2')"><img src="Menu Photos\Ice%20Cream%20%2D2.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Ice Cream - 3')"><img src="Menu Photos\Ice%20Cream%20%2D%203.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Whisky')"><img src="Menu Photos\Whisky.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="border:none; outline: none; width:400px; background: none; height:200px" class="tablinks" onclick="return openCity(event, 'Rum')"><img src="Menu Photos\Rum.jpg"  width="100%" height="100%" alt="" /></button>
+</div>
+
+<div id="Wine" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(0,0,58); border-collapse:collapse;}</style></head><body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Ksara Sunset Rose Bottle
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">16.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Ksara Blanc de Blanc Bottle
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">16.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Ksara Red Wine Bottle
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">16.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Les trois Maladroits Rose Bottle
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">12.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Les Trois Maladroits Blanc Bottle
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">12.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Les Trois Maladroits Rouge Bottle
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">12.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Ksara Sunset Rose Glass
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">3.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Ksara Blanc de Blanc Glass
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">3.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Ksara Red Wine Glass
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">3.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Les trois Maladroits Rose Glass
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">2.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Les trois Maladroits Blanc Glass
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">2.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Les Trois Maladroits Rouge Glass
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">2.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Ksara Sunset Rose 375cl
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">9.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'></table>
+</div>
+
+<div id="Beer" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(0,0,58); border-collapse:collapse;}</style></head><body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Almaza
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">2.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Almaza Mexican
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">2.65 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Almaza Light 250cl
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.75 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Beirut Beer
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Heineken
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">3.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'></table>
+</div>
+
+<div id="Alcoholic Drinks" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(0,0,58); border-collapse:collapse;}</style></head><body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Margarita
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Daiquiri
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Gin Basil
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Pink Grapfruit Gin
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Wiskey Sour
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Frozen Margarita
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Frozen Daiquiri
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Blue Lagoon
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Gin Sour
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Flavoured Margarita
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Flavoured Daiquiri
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Passion Fruit Martini
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Vodka Sour
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'></table>
+</div>
+
+<div id="Non Alcoholic Drinks" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(0,0,58); border-collapse:collapse;}</style></head><body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Jamaica Non Alcoholic
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">3.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Mojito Non Alcoholic
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">3.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Flavoured Mojito Non Alcoholic
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'></table>
+</div>
+
+<div id="Milk Shakes" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(0,0,58); border-collapse:collapse;}</style></head><body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Oreo
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Moccha Frappe
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Caramel Shake
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Lotus Shake
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Chocolate
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Vanilla Shake
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Item64
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'></table>
+</div>
+
+<div id="Smoothies" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(0,0,58); border-collapse:collapse;}</style></head><body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Peach Passion
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">3.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Tropical Sunshine
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">3.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Mixed Berries
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">3.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Item78
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'></table>
+</div>
+
+<div id="Juices" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(0,0,58); border-collapse:collapse;}</style></head><body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Lemonade
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Flavoured Lemonade
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.75 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'></table>
+</div>
+
+<div id="Energy Drinks" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(0,0,58); border-collapse:collapse;}</style></head><body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Red Bull
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">3.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">XXL
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">2.25 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Dark Blue
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Freez
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">7up
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">0.70 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">7up Big
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.70 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Rim Sparkling Water
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'></table>
+</div>
+
+<div id="Vodka" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(0,0,58); border-collapse:collapse;}</style></head><body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Stoli BOTTLE
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">40.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Stoli Gold Bottle
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">50.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Mosko Bottle
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">20.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Stoli Glass
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Stoli Gold Glass
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">5.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Mosko Glass
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">3.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'></table>
+</div>
+
+<div id="Gin" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(0,0,58); border-collapse:collapse;}</style></head><body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Hendricks
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">80.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Mother of Eight
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">20.50 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'></table>
+</div>
+
+<div id="Tequila" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(0,0,58); border-collapse:collapse;}</style></head><body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Jose Cuervo White Tequila 70cl
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">38.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Mijenta Blanco
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">167.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'></table>
+</div>
+
+<div id="Ice Cream - 1" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(0,0,58); border-collapse:collapse;}</style></head><body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Talej Fraise
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">0.25 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Talej Berry
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">0.25 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Talej Lemon
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">0.25 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'></table>
+</div>
+
+<div id="Ice Cream -2" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(0,0,58); border-collapse:collapse;}</style></head><body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Sandwish
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">0.70 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Kachta
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">0.70 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Cholcolocco
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">0.70 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Vegas Caramel
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">0.70 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Amarena
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">0.70 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Cornet Pistachio
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">0.70 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Cornet Straw + Vanilla
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">0.70 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Cornet Cookies
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">0.70 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Cornet Vanilla
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">0.70 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Cornet Choco
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">0.70 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'></table>
+</div>
+
+<div id="Ice Cream - 3" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(0,0,58); border-collapse:collapse;}</style></head><body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Capricio Volcano
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.20 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Cups
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.20 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Venetto Classic
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.20 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Venetto Chocolat
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.20 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Venetto Caramel
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.20 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Venetto Almond
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.20 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Venetto Peanut
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.20 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Venetto Pistachio
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.20 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Venetto Hazelnut
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1.20 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'></table>
+</div>
+
+<div id="Whisky" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(0,0,58); border-collapse:collapse;}</style></head><body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Black Label Bottle
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">60.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Red Label Bottle
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">40.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Jameson Bottle
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">40.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Grants Bottle
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">20.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Red Label 1l
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">70.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Black Label Glass
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">6.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Red Label Glass
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Jameson Irish Glass
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">4.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Grants Glass
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">3.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'></table>
+</div>
+
+<div id="Rum" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(0,0,58); border-collapse:collapse;}</style></head><body style="background-color: rgb(204,255,204); color: rgb(0,0,58); "><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Captain Morgan 75cl
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">40.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p face="Helvetica" style="font-size-adjust: none;text-size-adjust: none;-webkit-text-size-adjust: none;font-size:75px;line-height: 80%;">Commander White Rum70cl
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">12.00 $
+</p></td></tr>
+
+<font style='font-family:helvetica;font-size:45px;'></table>
+</div>
+
+
+
